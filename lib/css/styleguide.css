@@ -1,0 +1,341 @@
+/* CSS RESET */
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-natural-light: #f8f3e9;
+    --color-natural-medium: #d8cbb8;
+    --color-natural-dark: #333333;
+
+    --color-yellow: #f5c84c;
+    --color-pink: #e99a9a;
+    --color-green: #9caf88;
+
+    --header-height: 3rem;
+    --spacing: 1rem;
+}
+
+body {
+    margin: 0;
+    font-size: 100%;
+    font-family: Helvetica, Arial, sans-serif;
+    color: var(--color-natural-dark);
+    background: var(--color-natural-light);
+}
+
+
+/* TYPOGRAPHY */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+h1 {
+    font-size: 4rem;
+    line-height: 1;
+    margin: 1rem 0;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
+p {
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* LAYOUT */
+
+.container {
+    max-width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.display-flex {
+    display: flex;
+}
+
+.flex-align-center {
+    align-items: center;
+}
+
+.flex-justify-center {
+    justify-content: center;
+}
+
+
+/* HEADER */
+
+.header {
+    height: 5rem;
+    background: white;
+    border-bottom: 1px solid var(--color-natural-medium);
+}
+
+.header .container {
+    height: 100%;
+}
+
+.logo {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav {
+    gap: 2rem;
+    margin-left: auto;
+    margin-right: 2rem;
+}
+
+.nav a {
+    font-size: 0.9rem;
+}
+
+.cart {
+    border: 1px solid var(--color-natural-dark);
+    padding: 0.6rem 1rem;
+}
+
+
+/* HERO */
+
+.hero {
+    background: var(--color-yellow);
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 0;
+}
+
+.hero-text {
+    max-width: 520px;
+}
+
+.small-title {
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 0.15rem;
+}
+
+.hero-description {
+    font-size: 1.1rem;
+    max-width: 450px;
+}
+
+.button {
+    display: inline-block;
+    background: var(--color-natural-dark);
+    color: white;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+}
+
+.button:hover {
+    text-decoration: none;
+}
+
+
+/* HERO COLOR BLOCK */
+
+.hero-box {
+    width: 280px;
+    height: 280px;
+    background: #f8f3e9;
+    border: 15px solid var(--color-natural-dark);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    transform: rotate(4deg);
+}
+
+.hero-box span {
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+}
+
+.hero-box strong {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 3rem;
+}
+
+
+/* CATEGORIES */
+
+.categories {
+    padding: 5rem 0;
+    background: white;
+}
+
+.category-list {
+    gap: 1.5rem;
+}
+
+.category {
+    flex: 1;
+    padding: 2rem;
+    min-height: 150px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    text-decoration: none;
+}
+
+.category span {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.category small {
+    font-size: 0.9rem;
+}
+
+.chips {
+    background: var(--color-yellow);
+}
+
+.sweets {
+    background: var(--color-pink);
+}
+
+.drinks {
+    background: var(--color-green);
+}
+
+
+/* FEATURED PRODUCTS */
+
+.featured {
+    padding: 5rem 0;
+}
+
+.section-heading {
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.product-list {
+    gap: 1.5rem;
+}
+
+.product {
+    flex: 1;
+    background: white;
+    padding-bottom: 1.5rem;
+}
+
+.product-color {
+    height: 180px;
+    margin-bottom: 1.5rem;
+}
+
+.product h3,
+.product p,
+.product strong {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.product p {
+    color: #777;
+}
+
+.product strong {
+    font-size: 1.1rem;
+}
+
+.yellow {
+    background: var(--color-yellow);
+}
+
+.pink {
+    background: var(--color-pink);
+}
+
+.green {
+    background: var(--color-green);
+}
+
+
+/* CTA */
+
+.cta {
+    background: var(--color-natural-dark);
+    color: white;
+    text-align: center;
+    padding: 5rem 1rem;
+}
+
+.cta h2 {
+    font-size: 2.5rem;
+}
+
+.button-light {
+    background: white;
+    color: var(--color-natural-dark);
+}
+
+
+/* FOOTER */
+
+footer {
+    background: #222;
+    color: #ccc;
+    padding: 2rem 0;
+}
+
+footer .container {
+    justify-content: space-between;
+}
+
+footer p {
+    font-size: 0.8rem;
+}
+
+
+
+
+
+
+
+
+
+
+
