@@ -1,9 +1,11 @@
 IXD 608 OL 1 Fall 2026 Repo
 
-## Revelant Links
+## Relevant Links
 
-https://qinqinjiayii.com
+https://qingqinj...com
 
-https://qinqinjiayii.com/aau/JiayiQin_Web
+https://qingqinj...com/aau/JiayiQin_Web
 
-https://qinqinjiayii.com/aau/JiayiQin_web/styleguide
+https://qingqinj...com/aau/JiayiQin_web/styleguide
+
+https://qingqinj...com/aau/JiayiQin_web/styleguide/4.1index.html

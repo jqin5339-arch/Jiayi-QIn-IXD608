@@ -329,6 +329,72 @@ footer p {
     font-size: 0.8rem;
 }
 
+/* =========================
+   NAVIGATIONS
+========================= */
+
+#navigations {
+    padding: 30px;
+}
+
+#navigations > h2 {
+    margin-bottom: 30px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 36px;
+}
+
+.basic-nav ul {
+    list-style: none;
+
+    margin: 0;
+    padding: 0;
+}
+
+.basic-nav li {
+    margin: 0;
+    padding: 0;
+}
+
+.basic-nav a {
+    display: block;
+
+    padding: 0.2em 0.5em;
+
+    color: #000000;
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+.basic-nav a:hover {
+    background: #2fa4cf;
+    color: #ffffff;
+}
+
+/* =========================
+   SECTION SPACING
+========================= */
+
+body > .container {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+body > .container > h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+#navigations {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#gridsSystem {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 
 
 

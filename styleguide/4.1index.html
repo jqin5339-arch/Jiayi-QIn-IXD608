@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Styleguide</title>
+
+	<meta name="viewport" content="width=device-width">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="../lib/css/4.1styleguide.css">
+
+</head>
+<body>
+
+
+<header class="navbar">
+    <div class="container display-flex">
+        <div class="flex-none">
+            <h1>Styleguide</h1>
+        </div>
+        <div class="flex-stretch"></div>
+        <nav class="flex-none nav">
+            <ul class="container display-flex">
+                <li><a href="#tableofcontents">Table of Contents</a></li>
+   
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="container" id="tableofcontents">
+
+    <h2>Table of Contents</h2>
+
+    <div class="card">
+        <nav>
+            <ul>
+                <li><a href="#typography">Typography</a></li>
+            <ul>
+                <li><a href="#headings">Headings</a></li>
+                <li><a href="#paragraphs">Paragraphs</a></li>
+            </ul>
+            <li><a href="#cards">Cards</a></li>
+            <li><a href="#viwewindow">View Window</a></li>
+            <li><a href="#navigations">Navigations</a></li>
+            <li><a href="#gridsSystem">Grid System</a></li>  
+            <li><a href="#flexSystem">Flex System</a></li>
+
+         </ul>
+        </nav>
+    </div>
+
+    <div class="container" id="typography">
+        <h2>Typography</h2>
+
+        <div class="card soft" id="headings">
+
+            <h3>Headings</h3>
+
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+
+            <div class="typography-showcase">
+
+    <div class="type-example">
+        <span class="type-label">DISPLAY / CORMORANT GARAMOND</span>
+        <p class="display-text">
+            Find a plant that fits your life.
+        </p>
+    </div>
+
+    <div class="type-example">
+        <span class="type-label">EDITORIAL / SERIF</span>
+        <p class="editorial-text">
+            More plants. A brighter you.
+        </p>
+    </div>
+
+    <div class="type-example">
+        <span class="type-label">BRAND STATEMENT / TEAL</span>
+        <p class="brand-text">
+            Plants for the way you live.
+        </p>
+    </div>
+
+    <div class="type-example">
+        <span class="type-label">BODY / INTER</span>
+        <p class="body-example">
+            Discover plants designed for your space, routine,
+            and experience level.
+        </p>
+    </div>
+
+    <div class="type-example">
+        <span class="type-label">ACCENT / TEAL</span>
+        <p class="accent-text">
+            A little green goes a long way.
+        </p>
+    </div>
+
+</div>
+
+
+        </div>
+
+        <div class="card soft" id="paragraphs">
+
+            <h3>Paragraphs</h3>
+
+            <p>
+                Because it focuses on the planning process. It has room to explore different factors such as the destination, activities, timing, priorities, and unexpected situations. I think it provides a broader space for generating different strategic directions.
+            </p>
+
+        </div>
+    </div>
+
+</div>
+
+
+<div class="container" id="cards">
+    <h2>Cards</h2>
+
+
+    <div class="grid gap">
+        <div class="col-xs-12 col-md-4">
+            <div class="card">Card</div>
+        </div>
+        <div class="col-xs-12 col-md-4">
+            <div class="card soft">Card Soft</div>
+        </div>
+
+        <div class="col-xs-12 col-md-4">
+            <div class="card hard">Card Hard</div>
+        </div>
+
+        <div class="col-xs-12 col-md-4">
+            <div class="card flat">Card Flat</div>
+        </div>
+                <div class="col-xs-12 col-md-4">
+            <div class="card dark">Card Dark</div>
+        </div>
+                <div class="col-xs-12 col-md-4">
+            <div class="card medium">Card Medium</div>
+        </div>
+
+    </div>
+</div>
+
+<div class="container" id="navigations">
+
+    <h2>Navigations</h2>
+
+    　
+
+
+    <div class="card soft">
+
+        <h3>Basic Nav</h3>
+
+        <nav class="basic-nav">
+            <ul>
+             <li><a href="#">Home</a></li>
+<li><a href="#">Plants</a></li>
+<li><a href="#">Collections</a></li>
+<li><a href="#">About</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+
+    <!-- Flex Nav -->
+    <div class="card soft">
+
+        <h3>Flex Nav</h3>
+
+        <nav class="flex-nav">
+            <ul>
+    <li><a href="#">Shop Plants</a></li>
+<li><a href="#">Find Your Plant</a></li>
+<li><a href="#">Our Story</a></li>
+<li><a href="#">Care Guide</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+
+    <!-- Stretch Nav -->
+    <div class="card soft">
+
+        <h3>Stretch Nav</h3>
+
+        <nav class="stretch-nav">
+            <ul>
+             <li><a href="#">Plants</a></li>
+<li><a href="#">Care Guide</a></li>
+<li><a href="#">Journal</a></li>
+<li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+
+    <!-- Pills Nav -->
+    <div class="card soft">
+
+        <h3>Pills Nav</h3>
+
+        <nav class="pills-nav">
+            <ul>
+<li><a href="#">ALL</a></li>
+<li><a href="#">LOW LIGHT</a></li>
+<li><a href="#">EASY CARE</a></li>
+<li><a href="#">PET FRIENDLY</a></li>
+            </ul>
+        </nav>
+    <!-- Buttons -->
+    <div class="card soft">
+
+        <h3>Buttons</h3>
+
+        <div class="button-showcase">
+
+            <div class="button-group">
+                <span class="button-label">Primary</span>
+                <button class="btn btn-primary">SHOP PLANTS</button>
+            </div>
+
+            <div class="button-group">
+                <span class="button-label">Secondary</span>
+                <button class="btn btn-secondary">VIEW DETAILS</button>
+            </div>
+
+            <div class="button-group">
+                <span class="button-label">Text</span>
+                <button class="btn btn-text">EXPLORE ALL →</button>
+            </div>
+
+            <div class="button-group">
+                <span class="button-label">Pill</span>
+                <button class="btn btn-pill">LOW LIGHT</button>
+            </div>
+
+            <div class="button-group">
+                <span class="button-label">Icon</span>
+                <button class="btn btn-icon" aria-label="Add to wishlist">♡</button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    </div>
+
+</div>
+<section class="container" id="flexSystem">
+
+    <h2>Flex System</h2>
+
+    <div class="card soft">
+
+        <h3>Tables</h3>
+
+        <div class="table-wrapper">
+
+            <table class="luma-table">
+
+                <thead>
+                    <tr>
+                        <th>Plant</th>
+                        <th>Light</th>
+                        <th>Water</th>
+                        <th>Care Level</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Monstera</td>
+                        <td>Bright, indirect</td>
+                        <td>Weekly</td>
+                        <td>Easy</td>
+                    </tr>
+
+                    <tr>
+                        <td>Fiddle Leaf Fig</td>
+                        <td>Bright</td>
+                        <td>Weekly</td>
+                        <td>Medium</td>
+                    </tr>
+
+                    <tr>
+                        <td>Snake Plant</td>
+                        <td>Low–Bright</td>
+                        <td>Every 2–3 weeks</td>
+                        <td>Easy</td>
+                    </tr>
+                </tbody>
+
+            </table>
+            <div class="table-variants">
+
+    <!-- Striped -->
+    <div class="table-variant">
+        <span class="table-label">STRIPED</span>
+
+        <table class="luma-table table-striped">
+            <thead>
+                <tr>
+                    <th>Plant</th>
+                    <th>Care</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monstera</td>
+                    <td>Easy</td>
+                </tr>
+                <tr>
+                    <td>Snake Plant</td>
+                    <td>Easy</td>
+                </tr>
+                <tr>
+                    <td>Fiddle Leaf Fig</td>
+                    <td>Medium</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <!-- Lined -->
+    <div class="table-variant">
+        <span class="table-label">LINED</span>
+
+        <table class="luma-table table-lined">
+            <thead>
+                <tr>
+                    <th>Plant</th>
+                    <th>Care</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monstera</td>
+                    <td>Easy</td>
+                </tr>
+                <tr>
+                    <td>Snake Plant</td>
+                    <td>Easy</td>
+                </tr>
+                <tr>
+                    <td>Fiddle Leaf Fig</td>
+                    <td>Medium</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    <!-- Vertical -->
+    <div class="table-variant">
+        <span class="table-label">VERTICAL</span>
+
+        <table class="luma-table table-vertical">
+            <thead>
+                <tr>
+                    <th>Plant</th>
+                    <th>Care</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monstera</td>
+                    <td>Easy</td>
+                </tr>
+                <tr>
+                    <td>Snake Plant</td>
+                    <td>Easy</td>
+                </tr>
+                <tr>
+                    <td>Fiddle Leaf Fig</td>
+                    <td>Medium</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="productCards">
+    <h2>Product Cards</h2>
+
+    <div class="product-card-grid">
+
+        <article class="product-card">
+            <div class="product-image">
+    <button class="wishlist" aria-label="Add to wishlist">♡</button>
+    <span class="more-details">MORE DETAILS</span>
+</div>
+            <h3>Monstera Deliciosa</h3>
+            <p class="product-price">$49</p>
+            <span class="care-badge">Easy Care</span>
+        </article>
+
+        <article class="product-card">
+           <div class="product-image">
+    <button class="wishlist" aria-label="Add to wishlist">♡</button>
+    <span class="more-details">MORE DETAILS</span>
+</div>
+
+            <h3>Fiddle Leaf Fig</h3>
+            <p class="product-price">$79</p>
+            <span class="care-badge">Medium Care</span>
+        </article>
+
+        <article class="product-card">
+           <div class="product-image">
+    <button class="wishlist" aria-label="Add to wishlist">♡</button>
+    <span class="more-details">MORE DETAILS</span>
+</div>
+
+            <h3>Snake Plant</h3>
+            <p class="product-price">$39</p>
+            <span class="care-badge">Easy Care</span>
+        </article>
+
+        <article class="product-card">
+            <div class="product-image">
+    <button class="wishlist" aria-label="Add to wishlist">♡</button>
+    <span class="more-details">MORE DETAILS</span>
+</div>
+
+            <h3>ZZ Plant</h3>
+            <p class="product-price">$45</p>
+            <span class="care-badge">Easy Care</span>
+        </article>
+
+    </div>
+</section>
+
+    
+
+
+</body>
+</html>
