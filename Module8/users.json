@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Jiayi Qin",
+    "type": "student",
+    "email": "jiayi@example.com",
+    "classes": ["PHP", "UX Design", "Web Design"]
+  },
+  {
+    "name": "Ross Geller",
+    "type": "professor",
+    "email": "rgeller@example.com",
+    "classes": ["Biology", "Anthropology"]
+  }
+]
