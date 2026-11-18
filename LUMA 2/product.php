@@ -1,4 +1,3 @@
-
 <?php
 require_once __DIR__ . "/db.php";
 
@@ -29,8 +28,6 @@ if ($id !== null && $id !== false && $id > 0) {
   <?php if ($plant) { ?>
 
     <div class="detail-layout">
-
-     
 
 <div class="detail-gallery">
   <?php
@@ -130,24 +127,32 @@ if ($id !== null && $id !== false && $id > 0) {
           </p>
         </div>
 
-        <label for="quantity">Quantity</label>
-        <input
-          class="quantity"
-          id="quantity"
-          type="number"
-          value="1"
-          min="1"
-        >
+        <!-- 提交给 cart_actions.php 处理的表单 -->
+        <form action="cart_actions.php" method="POST">
+          <input type="hidden" name="action" value="add-to-cart">
+          <input type="hidden" name="product-id" value="<?php echo (int)$plant["id"]; ?>">
+          <input type="hidden" name="product-pot-style" value="Ceramic">
 
-        <div class="button-row">
-          <a class="btn btn-secondary" href="products.php">
-            BACK TO SHOP
-          </a>
+          <label for="quantity">Quantity</label>
+          <input
+            class="quantity"
+            id="quantity"
+            name="product-amount"
+            type="number"
+            value="1"
+            min="1"
+          >
 
-          <a class="btn btn-primary" href="cart.php">
-            VIEW SAMPLE CART
-          </a>
-        </div>
+          <div class="button-row">
+            <a class="btn btn-secondary" href="products.php">
+              BACK TO SHOP
+            </a>
+
+            <button type="submit" class="btn btn-primary">
+              ADD TO CART
+            </button>
+          </div>
+        </form>
 
         <p class="small-note">
           Cart is a visual sample for this assignment.
