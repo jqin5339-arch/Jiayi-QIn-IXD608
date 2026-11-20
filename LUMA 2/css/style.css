@@ -153,3 +153,99 @@ form label { display: block; margin: 14px 0 6px; font-size: 12px; font-weight: 6
   font-size: 12px;
 }
 
+/* Module 12 - Plant Search */
+
+.plant-search-form {
+  display: flex;
+  gap: 12px;
+  margin: 24px 0;
+  width: 100%;
+}
+
+.plant-search-form input {
+  flex: 1;
+  min-width: 0;
+  padding: 12px 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font: inherit;
+}
+
+.plant-search-form button {
+  padding: 12px 24px;
+  background: #00adb5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font: inherit;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .plant-search-form {
+    flex-direction: column;
+  }
+
+  .plant-search-form button {
+    width: 100%;
+  }
+}
+
+
+/* Module 12 - Sort (LUMA Style) */
+
+.plant-sort {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  margin: 8px 0 20px;
+}
+
+.plant-sort label {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: #393E46;
+  white-space: nowrap;
+}
+
+.plant-sort select {
+  width: 190px;
+  height: 40px;
+  padding: 0 14px;
+  border: 1px solid #D5DADD;
+  border-radius: 6px;
+  background: #FFFFFF;
+  color: #222831;
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 13px;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+.plant-sort select:hover,
+.plant-sort select:focus {
+  border-color: #00ADB5;
+}
+
+.plant-sort select:focus-visible {
+  outline: 2px solid #00ADB5;
+  outline-offset: 2px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .plant-sort {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .plant-sort select {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+

@@ -23,7 +23,40 @@ $category = $_GET["category"] ?? "All";
 <a href="products.php?category=Succulent">Succulent</a>
 
     </aside>
-    <div class="shop-content"><div class="shop-banner">A little green goes a long way.</div><p class="eyebrow">SHOWING: <?php echo htmlspecialchars($category); ?></p>
+    
+<div class="shop-content">
+
+  <div class="shop-banner">
+    A little green goes a long way.
+  </div>
+
+  <!-- Module 12: Search -->
+  <form id="plant-search-form" class="plant-search-form">
+    <input
+      type="search"
+      id="plant-search-input"
+      placeholder="Search plants..."
+      aria-label="Search plants"
+    >
+    <button type="submit">Search</button>
+  </form>
+  
+<div class="plant-sort">
+  <label for="plant-sort-select">Sort by:</label>
+  <select id="plant-sort-select">
+    <option value="">Default</option>
+    <option value="price_asc">Price: Low to High</option>
+    <option value="price_desc">Price: High to Low</option>
+    <option value="name_asc">Name: A–Z</option>
+    <option value="name_desc">Name: Z–A</option>
+  </select>
+</div>
+
+
+  <p class="eyebrow" id="products-status">
+    SHOWING: <?php echo htmlspecialchars($category); ?>
+  </p>
+
       <div class="product-grid">
         
 <?php foreach ($products as $plant) { ?>
@@ -41,4 +74,9 @@ $category = $_GET["category"] ?? "All";
     </div>
   </div>
 </main>
+
+</main>
+
+<script src="js/products.js?v=3" defer></script>
+
 <?php include "parts/footer.php"; ?>
