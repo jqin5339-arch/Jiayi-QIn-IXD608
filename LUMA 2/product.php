@@ -131,7 +131,13 @@ if ($id !== null && $id !== false && $id > 0) {
         <form action="cart_actions.php" method="POST">
           <input type="hidden" name="action" value="add-to-cart">
           <input type="hidden" name="product-id" value="<?php echo (int)$plant["id"]; ?>">
-          <input type="hidden" name="product-pot-style" value="Ceramic">
+        <label for="pot-style">Pot Style</label>
+
+<select id="pot-style"
+        name="product-pot-style">
+    <option value="Ceramic">Ceramic</option>
+    <option value="Terracotta">Terracotta</option>
+</select>
 
           <label for="quantity">Quantity</label>
           <input
@@ -174,3 +180,4 @@ if ($id !== null && $id !== false && $id > 0) {
 </main>
 
 <?php include "parts/footer.php"; ?>
+

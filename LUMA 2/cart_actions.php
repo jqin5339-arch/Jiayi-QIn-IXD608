@@ -19,9 +19,11 @@ switch ($action) {
             addToCart($id, $amount, $potStyle);
         }
 
-        header("Location: cart.php");
-        exit;
+      session_write_close();
 
+header("Cache-Control: no-store, no-cache, must-revalidate, max-age=0");
+header("Location: cart.php?v=" . time(), true, 303);
+exit;
     default:
         header("Location: products.php");
         exit;

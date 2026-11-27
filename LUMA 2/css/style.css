@@ -1,4 +1,4 @@
-/* LUMA website — based on our original styleguide */
+/* LUMA website â€” based on our original styleguide */
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body { margin: 0; font-family: "Inter", Arial, sans-serif; background: #EEEEEE; color: #222B31; line-height: 1.6; }
@@ -247,5 +247,3 @@ form label { display: block; margin: 14px 0 6px; font-size: 12px; font-weight: 6
     max-width: 100%;
   }
 }
-
-

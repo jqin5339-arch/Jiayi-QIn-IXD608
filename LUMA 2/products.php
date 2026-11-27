@@ -1,4 +1,3 @@
-
 <?php
 require_once __DIR__ . "/db.php";
 
@@ -80,3 +79,4 @@ $category = $_GET["category"] ?? "All";
 <script src="js/products.js?v=3" defer></script>
 
 <?php include "parts/footer.php"; ?>
+

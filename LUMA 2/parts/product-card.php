@@ -1,12 +1,7 @@
-
 <article class="product-card">
   <a class="product-image"
      href="product.php?id=<?php echo (int)$id; ?>"
      aria-label="View <?php echo htmlspecialchars($plant['name']); ?>">
-
-
-
-
 <?php
 $image = basename($plant['thumbnail'] ?? '');
 ?>

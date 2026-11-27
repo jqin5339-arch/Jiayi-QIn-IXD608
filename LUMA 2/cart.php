@@ -1,8 +1,6 @@
 <?php
 require_once __DIR__ . "/lib/php/functions.php";
 initSession();
-
-// 1. 处理移除单个商品的请求
 if (isset($_GET['remove'])) {
     $removeId = (int)$_GET['remove'];
     $removeStyle = $_GET['potStyle'] ?? 'Ceramic';
@@ -12,8 +10,9 @@ if (isset($_GET['remove'])) {
             return !($item->id == $removeId && $item->potStyle == $removeStyle);
         }));
     }
-    header('Location: cart.php');
-    exit;
+  session_write_close();
+header('Location: cart.php?v=' . time(), true, 303);
+exit;
 }
 
 // 2. 从数据库获取商品并建立关联索引
@@ -55,6 +54,7 @@ $total = $subtotal + $shipping;
 ?>
 
 <?php include "parts/head.php"; ?>
+<!-- CART_VERSION_1127_V2 -->
 <?php include "parts/header.php"; ?>
 
 <main class="container section">
@@ -157,10 +157,6 @@ $total = $subtotal + $shipping;
         </aside>
 
     </div>
-
-</main>
-
-<?php include "parts/footer.php"; ?>
 
 </main>
 

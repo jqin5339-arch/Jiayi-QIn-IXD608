@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", () => {
   const form = document.querySelector("#plant-search-form");
   const input = document.querySelector("#plant-search-input");
@@ -268,3 +267,4 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
 });
+

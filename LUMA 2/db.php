@@ -1,4 +1,3 @@
-
 <?php
 function getProducts() {
     $config = require '/home1/staqwjmy/luma-db-config.php';
