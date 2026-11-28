@@ -1,5 +1,6 @@
 <?php
 require_once __DIR__ . "/db.php";
+require_once __DIR__ . "/lib/php/recommendations.php";
 
 $id = filter_input(INPUT_GET, "id", FILTER_VALIDATE_INT);
 $plant = null;
@@ -179,5 +180,19 @@ if ($id !== null && $id !== false && $id > 0) {
 
 </main>
 
-<?php include "parts/footer.php"; ?>
+<?php
 
+if ($plant) {
+
+    showRecommendedProducts(
+        "Recommended Plants",
+        $plant['category'],
+        $plant['id'],
+        3
+    );
+
+}
+
+?>
+
+<?php include "parts/footer.php"; ?>

@@ -1,3 +1,6 @@
+<?php
+require_once __DIR__ . "/lib/php/recommendations.php";
+?>
 <?php include "parts/head.php"; ?>
 <?php include "parts/header.php"; ?>
 <main>
@@ -17,5 +20,18 @@
   </section>
   <section class="container section" id="about"><span class="eyebrow">OUR STORY</span><h2>Plants for the way you live.</h2><p>LUMA makes it easier to find a plant that feels right for your home.</p></section>
   <section class="container section" id="community"><span class="eyebrow">COMMUNITY</span><h2>Grow with us.</h2><p>Explore our collection and find your next green companion.</p><a class="btn btn-primary" href="products.php">EXPLORE ALL →</a></section>
+  <?php
+
+showRecommendedProducts(
+    "Latest Indoor Plants",
+    "Indoor"
+);
+
+showRecommendedProducts(
+    "Latest Hanging Plants",
+    "Hanging"
+);
+
+?>
 </main>
 <?php include "parts/footer.php"; ?>

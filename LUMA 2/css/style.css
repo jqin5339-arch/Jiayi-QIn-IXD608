@@ -247,3 +247,26 @@ form label { display: block; margin: 14px 0 6px; font-size: 12px; font-weight: 6
     max-width: 100%;
   }
 }
+/* Module 13 - Recommended Products */
+
+.recommended-section h2 {
+    margin-bottom: 28px;
+}
+
+.recommended-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+@media (max-width: 850px) {
+    .recommended-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 550px) {
+    .recommended-grid {
+        grid-template-columns: 1fr;
+    }
+}
